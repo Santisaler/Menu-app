@@ -1,0 +1,7 @@
+
+
+1. when using Qlabel inside a vertical layout, it is convenient to set size policy this way:
+ - Horizontal axis as "preferred" 
+ - Vertical axis as "fixed". 
+ If I do not do this, extra available space will be assigned to the label making it difficult to 
+ control its size 
