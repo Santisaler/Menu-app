@@ -1152,7 +1152,7 @@
          <item>
           <widget class="QPushButton" name="generateFile">
            <property name="text">
-            <string>GENERATE</string>
+            <string>GENERATE MENU</string>
            </property>
           </widget>
          </item>

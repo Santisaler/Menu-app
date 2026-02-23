@@ -1,7 +1,10 @@
 import sys
 from PySide6.QtWidgets import *
 from PySide6.QtCore import * 
-from ui_project4 import Ui_MainWindow   # Extraigo del archivo generado por QtDesigner
+
+from ui.ui_project4 import Ui_MainWindow   # Extraigo del archivo generado por QtDesigner
+#from ui.ui_carteles import Ui_MainWindow
+
 from PySide6.QtGui import QStandardItemModel  # 
 from PySide6.QtWidgets import QFileDialog     # Para abrir archivos de mi PC
 from PySide6.QtGui import QStandardItem
@@ -12,8 +15,11 @@ from docxtpl import DocxTemplate
 from style.styles import background_style
 from properties.classes import set_classes
 import win32com.client
+from PySide6.QtCore import Signal
 
 class Proyecto4Window(QMainWindow):
+    openCartelesSignal = Signal()
+    
     def __init__(self):
         super().__init__()
         self.ui = Ui_MainWindow() # Inicializo la pantalla creada en QtDesigner
@@ -139,6 +145,7 @@ class Proyecto4Window(QMainWindow):
         if self.ui.pdf_checkBox.isChecked() == True:
             self.pdf_generation(new_file_path)
 
+        self.ask_for_individual_posters()
 
     def pdf_generation(self,docx_path):
         """ When the checkbox is checked, a pdf is generated along with the word file """
@@ -169,8 +176,22 @@ class Proyecto4Window(QMainWindow):
         doc.Close()
         word.Quit()
 
+
+    def ask_for_individual_posters(self):
+        reply = QMessageBox.question(
+            self,
+            "Create posters",
+            "Do you also want to create individual posters?",
+            QMessageBox.Yes | QMessageBox.No
+        )
+        if reply == QMessageBox.Yes:
+            self.openCartelesSignal.emit() # with this signal, mainWindow.py knows that something must happen
     
+   
         
+
+
+
 if __name__ == '__main__':
     app = QApplication(sys.argv) # Por consola puedo pasarle parámetros a la app
     ventana = Proyecto4Window()

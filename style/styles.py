@@ -21,7 +21,7 @@ background_style = '''
 
     QTabWidget{
         background-color: #FFF2E5;
-        border-radius: 55px;
+        
         
     }
 
