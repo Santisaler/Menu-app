@@ -15,13 +15,19 @@ class my_mainWindow(QMainWindow):
         self.proyecto4.show()
         self.carteles.hide()
 
-        # conexión entre ventanas
-        self.proyecto4.openCartelesSignal.connect(self.open_carteles)
+        # conexión entre ventanas diseñanas 
+        self.proyecto4.openCartelesSignal.connect(self.open_carteles) # open carteles.py
+        self.carteles.openMainSignal.connect(self.open_main) # open main_project.py
      
-    def open_carteles(self):
+    def open_carteles(self,data):
         """ when a signal is emitted, my_mainWindow knows that it is necessary to switch windows (to 'carteles') """
+        self.carteles.set_data(data)
         self.proyecto4.hide()
         self.carteles.show()
+
+    def open_main(self):
+        self.proyecto4.show()
+        self.carteles.hide()
 
 
 

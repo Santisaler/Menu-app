@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'window_cartelestheOQl.ui'
+## Form generated from reading UI file 'window_cartelesKMkJlN.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.10.1
 ##
@@ -15,9 +15,9 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QFont, QFontDatabase, QGradient, QIcon,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
-from PySide6.QtWidgets import (QApplication, QHBoxLayout, QLabel, QLineEdit,
-    QMainWindow, QMenuBar, QPushButton, QSizePolicy,
-    QStatusBar, QVBoxLayout, QWidget)
+from PySide6.QtWidgets import (QApplication, QCheckBox, QHBoxLayout, QLabel,
+    QLineEdit, QMainWindow, QMenuBar, QPushButton,
+    QSizePolicy, QStatusBar, QVBoxLayout, QWidget)
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -28,7 +28,7 @@ class Ui_MainWindow(object):
         self.centralwidget.setObjectName(u"centralwidget")
         self.verticalLayoutWidget = QWidget(self.centralwidget)
         self.verticalLayoutWidget.setObjectName(u"verticalLayoutWidget")
-        self.verticalLayoutWidget.setGeometry(QRect(100, 40, 571, 401))
+        self.verticalLayoutWidget.setGeometry(QRect(100, 40, 601, 421))
         self.verticalLayout_2 = QVBoxLayout(self.verticalLayoutWidget)
         self.verticalLayout_2.setObjectName(u"verticalLayout_2")
         self.verticalLayout_2.setContentsMargins(0, 0, 0, 0)
@@ -50,15 +50,15 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_3.addWidget(self.label_3)
 
-        self.lineEdit_3 = QLineEdit(self.verticalLayoutWidget)
-        self.lineEdit_3.setObjectName(u"lineEdit_3")
+        self.path_sign_1 = QLineEdit(self.verticalLayoutWidget)
+        self.path_sign_1.setObjectName(u"path_sign_1")
 
-        self.horizontalLayout_3.addWidget(self.lineEdit_3)
+        self.horizontalLayout_3.addWidget(self.path_sign_1)
 
-        self.pushButton = QPushButton(self.verticalLayoutWidget)
-        self.pushButton.setObjectName(u"pushButton")
+        self.load_file_1 = QPushButton(self.verticalLayoutWidget)
+        self.load_file_1.setObjectName(u"load_file_1")
 
-        self.horizontalLayout_3.addWidget(self.pushButton)
+        self.horizontalLayout_3.addWidget(self.load_file_1)
 
 
         self.verticalLayout_2.addLayout(self.horizontalLayout_3)
@@ -70,15 +70,15 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_2.addWidget(self.label_2)
 
-        self.lineEdit_2 = QLineEdit(self.verticalLayoutWidget)
-        self.lineEdit_2.setObjectName(u"lineEdit_2")
+        self.path_sign_2 = QLineEdit(self.verticalLayoutWidget)
+        self.path_sign_2.setObjectName(u"path_sign_2")
 
-        self.horizontalLayout_2.addWidget(self.lineEdit_2)
+        self.horizontalLayout_2.addWidget(self.path_sign_2)
 
-        self.pushButton_2 = QPushButton(self.verticalLayoutWidget)
-        self.pushButton_2.setObjectName(u"pushButton_2")
+        self.load_file_2 = QPushButton(self.verticalLayoutWidget)
+        self.load_file_2.setObjectName(u"load_file_2")
 
-        self.horizontalLayout_2.addWidget(self.pushButton_2)
+        self.horizontalLayout_2.addWidget(self.load_file_2)
 
 
         self.verticalLayout_2.addLayout(self.horizontalLayout_2)
@@ -90,15 +90,15 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_4.addWidget(self.label_4)
 
-        self.lineEdit_4 = QLineEdit(self.verticalLayoutWidget)
-        self.lineEdit_4.setObjectName(u"lineEdit_4")
+        self.path_sign_3 = QLineEdit(self.verticalLayoutWidget)
+        self.path_sign_3.setObjectName(u"path_sign_3")
 
-        self.horizontalLayout_4.addWidget(self.lineEdit_4)
+        self.horizontalLayout_4.addWidget(self.path_sign_3)
 
-        self.pushButton_3 = QPushButton(self.verticalLayoutWidget)
-        self.pushButton_3.setObjectName(u"pushButton_3")
+        self.load_file_3 = QPushButton(self.verticalLayoutWidget)
+        self.load_file_3.setObjectName(u"load_file_3")
 
-        self.horizontalLayout_4.addWidget(self.pushButton_3)
+        self.horizontalLayout_4.addWidget(self.load_file_3)
 
 
         self.verticalLayout_2.addLayout(self.horizontalLayout_4)
@@ -110,15 +110,15 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout.addWidget(self.label)
 
-        self.lineEdit = QLineEdit(self.verticalLayoutWidget)
-        self.lineEdit.setObjectName(u"lineEdit")
+        self.path_sign_4 = QLineEdit(self.verticalLayoutWidget)
+        self.path_sign_4.setObjectName(u"path_sign_4")
 
-        self.horizontalLayout.addWidget(self.lineEdit)
+        self.horizontalLayout.addWidget(self.path_sign_4)
 
-        self.pushButton_4 = QPushButton(self.verticalLayoutWidget)
-        self.pushButton_4.setObjectName(u"pushButton_4")
+        self.load_file_4 = QPushButton(self.verticalLayoutWidget)
+        self.load_file_4.setObjectName(u"load_file_4")
 
-        self.horizontalLayout.addWidget(self.pushButton_4)
+        self.horizontalLayout.addWidget(self.load_file_4)
 
 
         self.verticalLayout_2.addLayout(self.horizontalLayout)
@@ -130,15 +130,15 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_5.addWidget(self.label_5)
 
-        self.lineEdit_5 = QLineEdit(self.verticalLayoutWidget)
-        self.lineEdit_5.setObjectName(u"lineEdit_5")
+        self.path_sign_5 = QLineEdit(self.verticalLayoutWidget)
+        self.path_sign_5.setObjectName(u"path_sign_5")
 
-        self.horizontalLayout_5.addWidget(self.lineEdit_5)
+        self.horizontalLayout_5.addWidget(self.path_sign_5)
 
-        self.pushButton_5 = QPushButton(self.verticalLayoutWidget)
-        self.pushButton_5.setObjectName(u"pushButton_5")
+        self.load_file_5 = QPushButton(self.verticalLayoutWidget)
+        self.load_file_5.setObjectName(u"load_file_5")
 
-        self.horizontalLayout_5.addWidget(self.pushButton_5)
+        self.horizontalLayout_5.addWidget(self.load_file_5)
 
 
         self.verticalLayout_2.addLayout(self.horizontalLayout_5)
@@ -150,23 +150,34 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_6.addWidget(self.label_7)
 
-        self.lineEdit_6 = QLineEdit(self.verticalLayoutWidget)
-        self.lineEdit_6.setObjectName(u"lineEdit_6")
+        self.path_sign_6 = QLineEdit(self.verticalLayoutWidget)
+        self.path_sign_6.setObjectName(u"path_sign_6")
 
-        self.horizontalLayout_6.addWidget(self.lineEdit_6)
+        self.horizontalLayout_6.addWidget(self.path_sign_6)
 
-        self.pushButton_7 = QPushButton(self.verticalLayoutWidget)
-        self.pushButton_7.setObjectName(u"pushButton_7")
+        self.load_file_6 = QPushButton(self.verticalLayoutWidget)
+        self.load_file_6.setObjectName(u"load_file_6")
 
-        self.horizontalLayout_6.addWidget(self.pushButton_7)
+        self.horizontalLayout_6.addWidget(self.load_file_6)
 
 
         self.verticalLayout_2.addLayout(self.horizontalLayout_6)
 
-        self.pushButton_6 = QPushButton(self.verticalLayoutWidget)
-        self.pushButton_6.setObjectName(u"pushButton_6")
+        self.generate_button = QPushButton(self.verticalLayoutWidget)
+        self.generate_button.setObjectName(u"generate_button")
 
-        self.verticalLayout_2.addWidget(self.pushButton_6)
+        self.verticalLayout_2.addWidget(self.generate_button)
+
+        self.pdf_checkBox = QCheckBox(self.verticalLayoutWidget)
+        self.pdf_checkBox.setObjectName(u"pdf_checkBox")
+        sizePolicy1 = QSizePolicy(QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Fixed)
+        sizePolicy1.setHorizontalStretch(0)
+        sizePolicy1.setVerticalStretch(0)
+        sizePolicy1.setHeightForWidth(self.pdf_checkBox.sizePolicy().hasHeightForWidth())
+        self.pdf_checkBox.setSizePolicy(sizePolicy1)
+        self.pdf_checkBox.setChecked(False)
+
+        self.verticalLayout_2.addWidget(self.pdf_checkBox, 0, Qt.AlignmentFlag.AlignHCenter)
 
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(MainWindow)
@@ -186,17 +197,18 @@ class Ui_MainWindow(object):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
         self.label_6.setText(QCoreApplication.translate("MainWindow", u"Carteles individuales", None))
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"Milanesa y ensadala", None))
-        self.pushButton.setText(QCoreApplication.translate("MainWindow", u"Load file", None))
+        self.load_file_1.setText(QCoreApplication.translate("MainWindow", u"Load file", None))
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"Pollo Grill\u00e9", None))
-        self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"Load file", None))
+        self.load_file_2.setText(QCoreApplication.translate("MainWindow", u"Load file", None))
         self.label_4.setText(QCoreApplication.translate("MainWindow", u"Ravioles", None))
-        self.pushButton_3.setText(QCoreApplication.translate("MainWindow", u"Load file", None))
+        self.load_file_3.setText(QCoreApplication.translate("MainWindow", u"Load file", None))
         self.label.setText(QCoreApplication.translate("MainWindow", u"Sandwirch mila", None))
-        self.pushButton_4.setText(QCoreApplication.translate("MainWindow", u"Load file", None))
+        self.load_file_4.setText(QCoreApplication.translate("MainWindow", u"Load file", None))
         self.label_5.setText(QCoreApplication.translate("MainWindow", u"Tallarines", None))
-        self.pushButton_5.setText(QCoreApplication.translate("MainWindow", u"Load file", None))
+        self.load_file_5.setText(QCoreApplication.translate("MainWindow", u"Load file", None))
         self.label_7.setText(QCoreApplication.translate("MainWindow", u"Promo desayuno", None))
-        self.pushButton_7.setText(QCoreApplication.translate("MainWindow", u"Load file", None))
-        self.pushButton_6.setText(QCoreApplication.translate("MainWindow", u"GENERATE CARTELES", None))
+        self.load_file_6.setText(QCoreApplication.translate("MainWindow", u"Load file", None))
+        self.generate_button.setText(QCoreApplication.translate("MainWindow", u"GENERATE CARTELES", None))
+        self.pdf_checkBox.setText(QCoreApplication.translate("MainWindow", u"PDF", None))
     # retranslateUi
 

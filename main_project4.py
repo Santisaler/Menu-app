@@ -18,7 +18,7 @@ import win32com.client
 from PySide6.QtCore import Signal
 
 class Proyecto4Window(QMainWindow):
-    openCartelesSignal = Signal()
+    openCartelesSignal = Signal(dict)
     
     def __init__(self):
         super().__init__()
@@ -53,7 +53,7 @@ class Proyecto4Window(QMainWindow):
             self.ui.template_path.setText(path)
 
 
-    def load_data_from_app(self):
+    def take_data_from_app(self):
         '''
         Take all data from inputs on the app and I return a dictionary
         '''
@@ -133,7 +133,7 @@ class Proyecto4Window(QMainWindow):
             return
 
 
-        datos = self.load_data_from_app() # dictionary full of data (menu's prices)
+        datos = self.take_data_from_app() # dictionary full of data (menu's prices)
         doc = DocxTemplate(template_path)
         
         doc.render(datos)  # inserting data from dictionary to new Word file 
@@ -145,7 +145,7 @@ class Proyecto4Window(QMainWindow):
         if self.ui.pdf_checkBox.isChecked() == True:
             self.pdf_generation(new_file_path)
 
-        self.ask_for_individual_posters()
+        self.ask_for_individual_posters(datos) # Need to send 'datos' to the other window (communication between each other) 
 
     def pdf_generation(self,docx_path):
         """ When the checkbox is checked, a pdf is generated along with the word file """
@@ -177,7 +177,7 @@ class Proyecto4Window(QMainWindow):
         word.Quit()
 
 
-    def ask_for_individual_posters(self):
+    def ask_for_individual_posters(self,datos):
         reply = QMessageBox.question(
             self,
             "Create posters",
@@ -185,7 +185,7 @@ class Proyecto4Window(QMainWindow):
             QMessageBox.Yes | QMessageBox.No
         )
         if reply == QMessageBox.Yes:
-            self.openCartelesSignal.emit() # with this signal, mainWindow.py knows that something must happen
+            self.openCartelesSignal.emit(datos) # with this signal, mainWindow.py knows that something must happen
     
    
         

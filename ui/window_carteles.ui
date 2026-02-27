@@ -19,8 +19,8 @@
      <rect>
       <x>100</x>
       <y>40</y>
-      <width>571</width>
-      <height>401</height>
+      <width>601</width>
+      <height>421</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -50,10 +50,10 @@
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_3"/>
+        <widget class="QLineEdit" name="path_sign_1"/>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton">
+        <widget class="QPushButton" name="load_file_1">
          <property name="text">
           <string>Load file</string>
          </property>
@@ -71,10 +71,10 @@
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_2"/>
+        <widget class="QLineEdit" name="path_sign_2"/>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton_2">
+        <widget class="QPushButton" name="load_file_2">
          <property name="text">
           <string>Load file</string>
          </property>
@@ -92,10 +92,10 @@
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_4"/>
+        <widget class="QLineEdit" name="path_sign_3"/>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton_3">
+        <widget class="QPushButton" name="load_file_3">
          <property name="text">
           <string>Load file</string>
          </property>
@@ -113,10 +113,10 @@
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit"/>
+        <widget class="QLineEdit" name="path_sign_4"/>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton_4">
+        <widget class="QPushButton" name="load_file_4">
          <property name="text">
           <string>Load file</string>
          </property>
@@ -134,10 +134,10 @@
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_5"/>
+        <widget class="QLineEdit" name="path_sign_5"/>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton_5">
+        <widget class="QPushButton" name="load_file_5">
          <property name="text">
           <string>Load file</string>
          </property>
@@ -155,10 +155,10 @@
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_6"/>
+        <widget class="QLineEdit" name="path_sign_6"/>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton_7">
+        <widget class="QPushButton" name="load_file_6">
          <property name="text">
           <string>Load file</string>
          </property>
@@ -167,9 +167,25 @@
       </layout>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton_6">
+      <widget class="QPushButton" name="generate_button">
        <property name="text">
         <string>GENERATE CARTELES</string>
+       </property>
+      </widget>
+     </item>
+     <item alignment="Qt::AlignmentFlag::AlignHCenter">
+      <widget class="QCheckBox" name="pdf_checkBox">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>PDF</string>
+       </property>
+       <property name="checked">
+        <bool>false</bool>
        </property>
       </widget>
      </item>
