@@ -9,15 +9,17 @@ from PySide6.QtGui import QIcon
 import os
 import pymupdf
 from docxtpl import DocxTemplate
-from properties.classes import set_classes
 import win32com.client
 from PySide6.QtCore import Signal
+from style.styles_carteles import styles_carteles
+from properties.carteles_classes import set_classes  
 
 class carteles_individuales(QMainWindow):
     openMainSignal = Signal()
     
     def __init__(self):
         super().__init__()
+        self.setStyleSheet(styles_carteles)
         self.ui = Ui_MainWindow() # Inicializo la pantalla creada en QtDesigner
         self.ui.setupUi(self)
         self.data = None  # <--- donde se guardará el diccionario
@@ -25,7 +27,8 @@ class carteles_individuales(QMainWindow):
 
 
     def inicializarUI(self):
-        self.setWindowTitle("Mi primera ventana")
+        self.setWindowTitle("Creación individual de carteles de precios")
+        set_classes(self.ui) # I use classes for the style. Created in a different module (check properties)
         self.ui.load_file_1.clicked.connect(lambda: self.load_file_path("p22", self.ui.path_sign_1)) # path_sign_x are lineEdits!
         self.ui.load_file_2.clicked.connect(lambda: self.load_file_path("p28", self.ui.path_sign_2))
         self.ui.load_file_3.clicked.connect(lambda: self.load_file_path("p43", self.ui.path_sign_3))
@@ -141,7 +144,12 @@ class carteles_individuales(QMainWindow):
             print("Error generando PDFs:", e)
             return False
         
-        
+#if __name__ == '__main__':
+#    app = QApplication(sys.argv) # Por consola puedo pasarle parámetros a la app
+#    ventana = carteles_individuales()
+#    ventana.inicializarUI() 
+#    ventana.show() # Visualizar ventana
+#    sys.exit(app.exec()) 
  
 """ 
 p22: Milanesa con ensalada y puré

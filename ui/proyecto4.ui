@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1103</width>
-    <height>758</height>
+    <width>1140</width>
+    <height>789</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -36,7 +36,7 @@
       <x>100</x>
       <y>70</y>
       <width>961</width>
-      <height>621</height>
+      <height>651</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout_12">
@@ -70,10 +70,10 @@
         <widget class="QWidget" name="postres_container" native="true">
          <property name="geometry">
           <rect>
-           <x>160</x>
+           <x>140</x>
            <y>20</y>
-           <width>281</width>
-           <height>131</height>
+           <width>301</width>
+           <height>151</height>
           </rect>
          </property>
          <widget class="QWidget" name="verticalLayoutWidget_3">
@@ -81,8 +81,8 @@
            <rect>
             <x>10</x>
             <y>10</y>
-            <width>261</width>
-            <height>111</height>
+            <width>281</width>
+            <height>131</height>
            </rect>
           </property>
           <layout class="QVBoxLayout" name="verticalLayout_3">
@@ -140,9 +140,9 @@
         <widget class="QWidget" name="gaseosas_container" native="true">
          <property name="geometry">
           <rect>
-           <x>160</x>
-           <y>170</y>
-           <width>281</width>
+           <x>140</x>
+           <y>190</y>
+           <width>301</width>
            <height>311</height>
           </rect>
          </property>
@@ -151,7 +151,7 @@
            <rect>
             <x>10</x>
             <y>10</y>
-            <width>261</width>
+            <width>281</width>
             <height>291</height>
            </rect>
           </property>
@@ -1203,7 +1203,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1103</width>
+     <width>1140</width>
      <height>33</height>
     </rect>
    </property>

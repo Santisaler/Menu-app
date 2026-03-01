@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'window_cartelesKMkJlN.ui'
+## Form generated from reading UI file 'window_cartelesmJgIoO.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.10.1
 ##
@@ -23,25 +23,28 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(770, 551)
+        MainWindow.resize(825, 543)
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
-        self.verticalLayoutWidget = QWidget(self.centralwidget)
+        self.container_carteles = QWidget(self.centralwidget)
+        self.container_carteles.setObjectName(u"container_carteles")
+        self.container_carteles.setGeometry(QRect(80, 20, 661, 461))
+        self.verticalLayoutWidget = QWidget(self.container_carteles)
         self.verticalLayoutWidget.setObjectName(u"verticalLayoutWidget")
-        self.verticalLayoutWidget.setGeometry(QRect(100, 40, 601, 421))
+        self.verticalLayoutWidget.setGeometry(QRect(30, 20, 601, 421))
         self.verticalLayout_2 = QVBoxLayout(self.verticalLayoutWidget)
         self.verticalLayout_2.setObjectName(u"verticalLayout_2")
         self.verticalLayout_2.setContentsMargins(0, 0, 0, 0)
-        self.label_6 = QLabel(self.verticalLayoutWidget)
-        self.label_6.setObjectName(u"label_6")
+        self.container_title = QLabel(self.verticalLayoutWidget)
+        self.container_title.setObjectName(u"container_title")
         sizePolicy = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.label_6.sizePolicy().hasHeightForWidth())
-        self.label_6.setSizePolicy(sizePolicy)
-        self.label_6.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        sizePolicy.setHeightForWidth(self.container_title.sizePolicy().hasHeightForWidth())
+        self.container_title.setSizePolicy(sizePolicy)
+        self.container_title.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
-        self.verticalLayout_2.addWidget(self.label_6)
+        self.verticalLayout_2.addWidget(self.container_title)
 
         self.horizontalLayout_3 = QHBoxLayout()
         self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
@@ -182,7 +185,7 @@ class Ui_MainWindow(object):
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(MainWindow)
         self.menubar.setObjectName(u"menubar")
-        self.menubar.setGeometry(QRect(0, 0, 770, 33))
+        self.menubar.setGeometry(QRect(0, 0, 825, 33))
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QStatusBar(MainWindow)
         self.statusbar.setObjectName(u"statusbar")
@@ -195,7 +198,7 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
-        self.label_6.setText(QCoreApplication.translate("MainWindow", u"Carteles individuales", None))
+        self.container_title.setText(QCoreApplication.translate("MainWindow", u"Carteles individuales", None))
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"Milanesa y ensadala", None))
         self.load_file_1.setText(QCoreApplication.translate("MainWindow", u"Load file", None))
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"Pollo Grill\u00e9", None))

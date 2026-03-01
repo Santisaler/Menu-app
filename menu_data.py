@@ -2,7 +2,7 @@ import sys
 from PySide6.QtWidgets import *
 from PySide6.QtCore import * 
 
-from ui.ui_project4 import Ui_MainWindow   # Extraigo del archivo generado por QtDesigner
+from ui.ui_menuData import Ui_MainWindow   # Extraigo del archivo generado por QtDesigner
 #from ui.ui_carteles import Ui_MainWindow
 
 from PySide6.QtGui import QStandardItemModel  # 
@@ -12,23 +12,23 @@ from PySide6.QtGui import QIcon
 import os
 import pymupdf
 from docxtpl import DocxTemplate
-from style.styles import background_style
-from properties.classes import set_classes
+from style.styles_menu import style_menu
+from properties.menu_classes import set_classes
 import win32com.client
 from PySide6.QtCore import Signal
 
-class Proyecto4Window(QMainWindow):
+class ProyectoMenu(QMainWindow):
     openCartelesSignal = Signal(dict)
     
     def __init__(self):
         super().__init__()
         self.ui = Ui_MainWindow() # Inicializo la pantalla creada en QtDesigner
         self.ui.setupUi(self)
-        self.setStyleSheet(background_style)
+        self.setStyleSheet(style_menu)
 
     def inicializarUI(self):
         self.setWindowTitle("PDF application")
-        set_classes(self.ui) # created in a different module (check properties)
+        set_classes(self.ui) # I use classes for the style. Created in a different module (check properties)
         self.ui.pushButton.clicked.connect(self.load_initial_file)
         self.ui.generateFile.clicked.connect(self.generate_menu)
         self.ui.tabWidget.setTabText(0, "Postres y bebidas")
@@ -194,7 +194,7 @@ class Proyecto4Window(QMainWindow):
 
 if __name__ == '__main__':
     app = QApplication(sys.argv) # Por consola puedo pasarle parámetros a la app
-    ventana = Proyecto4Window()
+    ventana = ProyectoMenu()
     ventana.inicializarUI() 
     ventana.show() # Visualizar ventana
     sys.exit(app.exec()) 

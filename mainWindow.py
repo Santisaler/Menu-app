@@ -1,14 +1,14 @@
 import sys
 from PySide6.QtWidgets import *
 from PySide6.QtCore import *
-from main_project4 import Proyecto4Window
+from menu_data import ProyectoMenu
 from carteles import  carteles_individuales
 
 
 class my_mainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.proyecto4 = Proyecto4Window()
+        self.proyecto4 = ProyectoMenu()
         self.carteles = carteles_individuales()
         self.proyecto4.inicializarUI()
         self.carteles.inicializarUI()

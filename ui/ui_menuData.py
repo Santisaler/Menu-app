@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'proyecto4WmlSHk.ui'
+## Form generated from reading UI file 'proyecto4oTTlSu.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.10.1
 ##
@@ -24,7 +24,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1103, 758)
+        MainWindow.resize(1103, 790)
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.bar_name = QLabel(self.centralwidget)
@@ -33,7 +33,7 @@ class Ui_MainWindow(object):
         self.bar_name.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.verticalLayoutWidget_11 = QWidget(self.centralwidget)
         self.verticalLayoutWidget_11.setObjectName(u"verticalLayoutWidget_11")
-        self.verticalLayoutWidget_11.setGeometry(QRect(100, 70, 961, 621))
+        self.verticalLayoutWidget_11.setGeometry(QRect(100, 70, 961, 651))
         self.verticalLayout_12 = QVBoxLayout(self.verticalLayoutWidget_11)
         self.verticalLayout_12.setObjectName(u"verticalLayout_12")
         self.verticalLayout_12.setContentsMargins(0, 0, 0, 0)
@@ -63,10 +63,10 @@ class Ui_MainWindow(object):
         self.tab.setObjectName(u"tab")
         self.postres_container = QWidget(self.tab)
         self.postres_container.setObjectName(u"postres_container")
-        self.postres_container.setGeometry(QRect(160, 20, 281, 131))
+        self.postres_container.setGeometry(QRect(140, 20, 301, 151))
         self.verticalLayoutWidget_3 = QWidget(self.postres_container)
         self.verticalLayoutWidget_3.setObjectName(u"verticalLayoutWidget_3")
-        self.verticalLayoutWidget_3.setGeometry(QRect(10, 10, 261, 111))
+        self.verticalLayoutWidget_3.setGeometry(QRect(10, 10, 281, 131))
         self.verticalLayout_3 = QVBoxLayout(self.verticalLayoutWidget_3)
         self.verticalLayout_3.setObjectName(u"verticalLayout_3")
         self.verticalLayout_3.setContentsMargins(0, 0, 0, 0)
@@ -118,10 +118,10 @@ class Ui_MainWindow(object):
 
         self.gaseosas_container = QWidget(self.tab)
         self.gaseosas_container.setObjectName(u"gaseosas_container")
-        self.gaseosas_container.setGeometry(QRect(160, 170, 281, 311))
+        self.gaseosas_container.setGeometry(QRect(140, 190, 301, 311))
         self.verticalLayoutWidget_2 = QWidget(self.gaseosas_container)
         self.verticalLayoutWidget_2.setObjectName(u"verticalLayoutWidget_2")
-        self.verticalLayoutWidget_2.setGeometry(QRect(10, 10, 261, 291))
+        self.verticalLayoutWidget_2.setGeometry(QRect(10, 10, 281, 291))
         self.verticalLayout_2 = QVBoxLayout(self.verticalLayoutWidget_2)
         self.verticalLayout_2.setObjectName(u"verticalLayout_2")
         self.verticalLayout_2.setContentsMargins(0, 0, 0, 0)
@@ -1057,7 +1057,7 @@ class Ui_MainWindow(object):
         self.label_58.setText(QCoreApplication.translate("MainWindow", u"Tallarines filetto", None))
         self.label_59.setText(QCoreApplication.translate("MainWindow", u"Tallarines c/ estofado", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_5), QCoreApplication.translate("MainWindow", u"P\u00e1gina", None))
-        self.generateFile.setText(QCoreApplication.translate("MainWindow", u"GENERATE", None))
+        self.generateFile.setText(QCoreApplication.translate("MainWindow", u"GENERATE MENU", None))
         self.pdf_checkBox.setText(QCoreApplication.translate("MainWindow", u"PDF", None))
         self.label_4.setText(QCoreApplication.translate("MainWindow", u"Designed by Santiago Salerno", None))
     # retranslateUi

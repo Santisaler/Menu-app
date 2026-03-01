@@ -15,7 +15,7 @@ def set_classes(ui):
         ui.pastas_title,
     ]
 
-    for label in secondary_titles:
+    for label in secondary_titles:  # label is an iterable --> different widgets (labels) 
         label.setProperty("class","container_titles")  
         label.style().unpolish(label)
         label.style().polish(label) #undo and do again the appearence
